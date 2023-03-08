@@ -5,11 +5,6 @@ __pycache__/
 
 mba_m1.mp4
 rawdata_ch13.csv
-*.json
-*.zip
-*.wav
-*.mp3
-getzip.py
 
 # C extensions
 *.so
