@@ -11,18 +11,18 @@ DDIR = PATH / "Dataset"
 
 engine=sr.Recognizer()
 mic = sr.Microphone(1)
-title = 'perkenalanDiri'
+title = 'BANG UDAH BANG'
 from_file = sr.AudioFile(f'{DDIR}/{title}.wav')
 
 def call():
-    with mic as source:
-    # with from_file as source:
+    # with mic as source:
+    with from_file as source:
         engine.adjust_for_ambient_noise(source)
-        # rekaman = engine.record(source, duration=30, offset=30) #kalo pake from_file
+        rekaman = engine.record(source) #kalo pake from_file
 
-        print('--=-- Mulai --=--')
-        rekaman = engine.listen(source) #kalo pake mic
-        print('--=-- Selesai --=--')
+        # print('--=-- Mulai --=--')
+        # rekaman = engine.listen(source) #kalo pake mic
+        # print('--=-- Selesai --=--')
         
             # BY GOOGLE #
         hasil=engine.recognize_google(rekaman,language='id-ID')

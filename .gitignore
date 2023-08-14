@@ -8,6 +8,11 @@ rawdata_ch13.csv
 
 # C extensions
 *.so
+*.wav
+*.zip
+speech_recognition/dataset/
+speech_recognition/logs/
+*.h5
 
 # Distribution / packaging
 .Python

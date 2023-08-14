@@ -1,4 +1,4 @@
-import openai
+.import openai
 import pathlib,json
 
 BASE_DIR = pathlib.Path(__file__).parent.parent
